@@ -13,17 +13,17 @@ const sendDefaults = {
   sslExpiry: true,
   sslExpiryThreshold: 30
 }
-
+/*
 export const smsChannel = new SmsAlertChannel('sms-channel-1', {
   phoneNumber: '0031061234567890',
   ...sendDefaults
 })
-
+*/
 export const emailChannel = new EmailAlertChannel('email-channel-1', {
-  address: 'alerts@acme.com',
+  address: 'mariadeanton@gmail.com',
   ...sendDefaults
 })
-
+/*
 export const slackChannel = new SlackAlertChannel('slack-channel-1', {
   url: new URL('https://hooks.slack.com/services/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'),
   channel: '#ops',
@@ -46,3 +46,4 @@ export const webhookChannel = new WebhookAlertChannel('webhook-channel-1', {
   }`,
   ...sendDefaults
 })
+*/
