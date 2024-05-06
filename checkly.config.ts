@@ -6,17 +6,17 @@ import { AlertEscalationBuilder, RetryStrategyBuilder } from 'checkly/constructs
  */
 const config = defineConfig({
   /* A human friendly name for your project */
-  projectName: 'Advanced Example Project',
+  projectName: 'Testing Checkly with TypeScript',
   /** A logical ID that needs to be unique across your Checkly account,
    * See https://www.checklyhq.com/docs/cli/constructs/ to learn more about logical IDs.
    */
-  logicalId: 'advanced-example-project',
-  /* An optional URL to your Git repo to be shown in your test sessions and resource activity log */
-  /* repoUrl: 'https://github.com/checkly/checkly-cli', */
+  logicalId: 'test-checkly-salmon-catfish',
+  /* URL to the Git repo will be shown in your test sessions and resource activity log */
+  repoUrl: 'https://github.com/MariadeAnton/salmon-catfish',
   /* Sets default values for Checks */
   checks: {
     /* A default for how often your Check should run in minutes */
-    frequency: 10,
+    frequency: 60,
     /* Checkly data centers to run your Checks as monitors */
     locations: ['us-east-1', 'eu-west-1'],
     /* An optional array of tags to organize your Checks */
@@ -35,7 +35,7 @@ const config = defineConfig({
     playwrightConfig: {
       timeout: 30000,
       use: {
-        baseURL: 'https://www.danube-web.shop',
+        baseURL: 'https://www.valued.app',
         viewport: { width: 1280, height: 720 },
       }
     },
